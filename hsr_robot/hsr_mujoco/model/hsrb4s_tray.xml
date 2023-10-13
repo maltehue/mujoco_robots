@@ -101,13 +101,13 @@
                                 <joint name="wrist_roll_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-1.92 3.67" damping="1" />
                                 <geom type="mesh" mesh="wrist_roll" />
                                 <geom pos="0.012 0 0.1405" quat="0 0 0 1" type="mesh" rgba="0.3333 0.3333 0.3333 1" mesh="palm" />
-                                <!-- <body name="sync_create_tray" pos="0.012 0.0 0.4" axisangle="0 1 0 -1.5708">
+                                <body name="sync_create_tray" pos="0.012 0.0 0.4" axisangle="0 1 0 -1.5708">
                                         <geom type="box" pos="0 0 0" size="0.15 0.15 0.02" rgba="0 0 1 1" />
                                         <geom type="box" pos="-0.15 0 0.01" size="0.01 0.15 0.02" rgba="0 0 1 1" />
                                         <geom type="box" pos="0.15 0 0.01" size="0.01 0.15 0.02" rgba="0 0 1 1" />
                                         <geom type="box" pos="0 0.15 0.01" size="0.15 0.01 0.02" rgba="0 0 1 1" />
                                         <geom type="box" pos="0 -0.15 0.01" size="0.15 0.01 0.02" rgba="0 0 1 1" />
-                                    </body> -->
+                                    </body>
                                 <body name="hand_motor_dummy_link" pos="0.012 0 0.1405" quat="0 0 0 1">
                                     <inertial pos="0 0 0" mass="0.15" diaginertia="0.015 0.015 0.015" />
                                     <joint name="hand_motor_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-0.798 1.24" damping="1"/>
