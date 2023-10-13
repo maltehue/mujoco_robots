@@ -15,3 +15,13 @@ To start a world with the robot holding a cup containing 200 particles, and a bo
 roslaunch hsr_mujoco hsrb4s_velocity_particle_containers.launch
 ```
 ![image](https://github.com/maltehue/mujoco_robots/assets/122607802/9597f973-b6e0-47d2-9821-b33ff68a9d20)
+
+
+To start a world where the hsr holds a tray with one ball on it
+
+```bash
+roslaunch hsr_mujoco hsrb4s_velocity_tray.launch
+```
+![image](https://github.com/maltehue/mujoco_robots/assets/122607802/8c4dd17f-37ba-425d-a053-e82a91bbec1a)
+
+
