@@ -4,6 +4,10 @@
     <flag sensornoise="disable" contact="enable"/>
   </option>
 
+	<default>
+	<!--3 is the highest friction that works. It makes the particles come out slower-->
+        <geom condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="3 0.005 0.0001"/>
+    </default>
 
   <asset>
     <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1=".1 .2 .3" rgb2=".2 .3 .4" />
@@ -30,139 +34,6 @@
             <geom name="side4" type="box" size="0.1 0.01 0.05" pos="0 -0.09 0.04" rgba=".5 .5 .5 1"/>
         </body>
     </worldbody>
-
-	<!--
-	<worldbody>
-		<body name="bowl" pos="2.15 0 0.3" >
-			
-			<geom name="bowl_bottom" type="mesh" mesh="bowl_bottom" rgba="1 1 1 1" />
-            <geom name="bowl_side_1" type="mesh" euler="0 0 0.1745" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_2" type="mesh" euler="0 0 0.3491" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_3" type="mesh" euler="0 0 0.5236" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_4" type="mesh" euler="0 0 0.6981" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_5" type="mesh" euler="0 0 0.8727" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_6" type="mesh" euler="0 0 1.0472" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_7" type="mesh" euler="0 0 1.2217" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_8" type="mesh" euler="0 0 1.3963" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_9" type="mesh" euler="0 0 1.5708" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_10" type="mesh" euler="0 0 1.7453" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_11" type="mesh" euler="0 0 1.9199" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_12" type="mesh" euler="0 0 2.0944" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_13" type="mesh" euler="0 0 2.2689" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_14" type="mesh" euler="0 0 2.4435" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_15" type="mesh" euler="0 0 2.6218" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_16" type="mesh" euler="0 0 2.7925" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_17" type="mesh" euler="0 0 2.9671" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_18" type="mesh" euler="0 0 3.1416" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_19" type="mesh" euler="0 0 3.3161" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_20" type="mesh" euler="0 0 3.4907" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_21" type="mesh" euler="0 0 3.6652" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_22" type="mesh" euler="0 0 3.8397" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_23" type="mesh" euler="0 0 4.0143" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_24" type="mesh" euler="0 0 4.1888" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_25" type="mesh" euler="0 0 4.3633" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_26" type="mesh" euler="0 0 4.5379" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_27" type="mesh" euler="0 0 4.7124" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_28" type="mesh" euler="0 0 4.8869" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_29" type="mesh" euler="0 0 5.0615" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_30" type="mesh" euler="0 0 5.2360" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_31" type="mesh" euler="0 0 5.4105" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_32" type="mesh" euler="0 0 5.5851" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_33" type="mesh" euler="0 0 5.7596" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_34" type="mesh" euler="0 0 5.9341" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_35" type="mesh" euler="0 0 6.1087" mesh="bowl_side" rgba="1 1 1 1" />
-            <geom name="bowl_side_36" type="mesh" euler="0 0 6.2832" mesh="bowl_side" rgba="1 1 1 1" />
-		</body>
-	</worldbody>
-	-->
-	<!--
-	<worldbody>
-		<body name="mycup" pos="1 -1 0.8" axisangle="1 0 0 -1.57">
-			
-			<geom name="cup_v2000_geom" type="mesh" mesh="cup_v2000" rgba="1 1 1 1"/>
-			<geom name="cup_v2001_geom" type="mesh" mesh="cup_v2001" rgba="1 1 1 1"/>
-			<geom name="cup_v2002_geom" type="mesh" mesh="cup_v2002" rgba="1 1 1 1"/>
-			<geom name="cup_v2003_geom" type="mesh" mesh="cup_v2003" rgba="1 1 1 1"/>
-			<geom name="cup_v2004_geom" type="mesh" mesh="cup_v2004" rgba="1 1 1 1"/>
-			<geom name="cup_v2005_geom" type="mesh" mesh="cup_v2005" rgba="1 1 1 1"/>
-			<geom name="cup_v2006_geom" type="mesh" mesh="cup_v2006" rgba="1 1 1 1"/>
-			<geom name="cup_v2007_geom" type="mesh" mesh="cup_v2007" rgba="1 1 1 1"/>
-			<geom name="cup_v2008_geom" type="mesh" mesh="cup_v2008" rgba="1 1 1 1"/>
-			<geom name="cup_v2009_geom" type="mesh" mesh="cup_v2009" rgba="1 1 1 1"/>
-			<geom name="cup_v2010_geom" type="mesh" mesh="cup_v2010" rgba="1 1 1 1"/>
-			<geom name="cup_v2011_geom" type="mesh" mesh="cup_v2011" rgba="1 1 1 1"/>
-			<geom name="cup_v2012_geom" type="mesh" mesh="cup_v2012" rgba="1 1 1 1"/>
-			<geom name="cup_v2013_geom" type="mesh" mesh="cup_v2013" rgba="1 1 1 1"/>
-			<geom name="cup_v2014_geom" type="mesh" mesh="cup_v2014" rgba="1 1 1 1"/>
-			<geom name="cup_v2015_geom" type="mesh" mesh="cup_v2015" rgba="1 1 1 1"/>
-			<geom name="cup_v2016_geom" type="mesh" mesh="cup_v2016" rgba="1 1 1 1"/>
-			<geom name="cup_v2017_geom" type="mesh" mesh="cup_v2017" rgba="1 1 1 1"/>
-			<geom name="cup_v2018_geom" type="mesh" mesh="cup_v2018" rgba="1 1 1 1"/>
-			<geom name="cup_v2019_geom" type="mesh" mesh="cup_v2019" rgba="1 1 1 1"/>
-			<geom name="cup_v2020_geom" type="mesh" mesh="cup_v2020" rgba="1 1 1 1"/>
-			<geom name="cup_v2021_geom" type="mesh" mesh="cup_v2021" rgba="1 1 1 1"/>
-			<geom name="cup_v2022_geom" type="mesh" mesh="cup_v2022" rgba="1 1 1 1"/>
-			<geom name="cup_v2023_geom" type="mesh" mesh="cup_v2023" rgba="1 1 1 1"/>
-			<geom name="cup_v2024_geom" type="mesh" mesh="cup_v2024" rgba="1 1 1 1"/>
-			<geom name="cup_v2025_geom" type="mesh" mesh="cup_v2025" rgba="1 1 1 1"/>
-			<geom name="cup_v2026_geom" type="mesh" mesh="cup_v2026" rgba="1 1 1 1"/>
-			<geom name="cup_v2027_geom" type="mesh" mesh="cup_v2027" rgba="1 1 1 1"/>
-			<geom name="cup_v2028_geom" type="mesh" mesh="cup_v2028" rgba="1 1 1 1"/>
-			<geom name="cup_v2029_geom" type="mesh" mesh="cup_v2029" rgba="1 1 1 1"/>
-			<geom name="cup_v2030_geom" type="mesh" mesh="cup_v2030" rgba="1 1 1 1"/>
-			<geom name="cup_v2031_geom" type="mesh" mesh="cup_v2031" rgba="1 1 1 1"/>
-			<geom name="cup_v2032_geom" type="mesh" mesh="cup_v2032" rgba="1 1 1 1"/>
-			<geom name="cup_v2033_geom" type="mesh" mesh="cup_v2033" rgba="1 1 1 1"/>
-			<geom name="cup_v2034_geom" type="mesh" mesh="cup_v2034" rgba="1 1 1 1"/>
-			<geom name="cup_v2035_geom" type="mesh" mesh="cup_v2035" rgba="1 1 1 1"/>
-			<geom name="cup_v2036_geom" type="mesh" mesh="cup_v2036" rgba="1 1 1 1"/>
-			<geom name="cup_v2037_geom" type="mesh" mesh="cup_v2037" rgba="1 1 1 1"/>
-			<geom name="cup_v2038_geom" type="mesh" mesh="cup_v2038" rgba="1 1 1 1"/>
-			<geom name="cup_v2039_geom" type="mesh" mesh="cup_v2039" rgba="1 1 1 1"/>
-			<geom name="cup_v2040_geom" type="mesh" mesh="cup_v2040" rgba="1 1 1 1"/>
-			<geom name="cup_v2041_geom" type="mesh" mesh="cup_v2041" rgba="1 1 1 1"/>
-			<geom name="cup_v2042_geom" type="mesh" mesh="cup_v2042" rgba="1 1 1 1"/>
-			<geom name="cup_v2043_geom" type="mesh" mesh="cup_v2043" rgba="1 1 1 1"/>
-			<geom name="cup_v2044_geom" type="mesh" mesh="cup_v2044" rgba="1 1 1 1"/>
-			<geom name="cup_v2045_geom" type="mesh" mesh="cup_v2045" rgba="1 1 1 1"/>
-			<geom name="cup_v2046_geom" type="mesh" mesh="cup_v2046" rgba="1 1 1 1"/>
-			<geom name="cup_v2047_geom" type="mesh" mesh="cup_v2047" rgba="1 1 1 1"/>
-			<geom name="cup_v2048_geom" type="mesh" mesh="cup_v2048" rgba="1 1 1 1"/>
-			<geom name="cup_v2049_geom" type="mesh" mesh="cup_v2049" rgba="1 1 1 1"/>
-			<geom name="cup_v2050_geom" type="mesh" mesh="cup_v2050" rgba="1 1 1 1"/>
-			<geom name="cup_v2051_geom" type="mesh" mesh="cup_v2051" rgba="1 1 1 1"/>
-			<geom name="cup_v2052_geom" type="mesh" mesh="cup_v2052" rgba="1 1 1 1"/>
-			<geom name="cup_v2053_geom" type="mesh" mesh="cup_v2053" rgba="1 1 1 1"/>
-			<geom name="cup_v2054_geom" type="mesh" mesh="cup_v2054" rgba="1 1 1 1"/>
-			<geom name="cup_v2055_geom" type="mesh" mesh="cup_v2055" rgba="1 1 1 1"/>
-			<geom name="cup_v2056_geom" type="mesh" mesh="cup_v2056" rgba="1 1 1 1"/>
-			<geom name="cup_v2057_geom" type="mesh" mesh="cup_v2057" rgba="1 1 1 1"/>
-			<geom name="cup_v2058_geom" type="mesh" mesh="cup_v2058" rgba="1 1 1 1"/>
-			<geom name="cup_v2059_geom" type="mesh" mesh="cup_v2059" rgba="1 1 1 1"/>
-			<geom name="cup_v2060_geom" type="mesh" mesh="cup_v2060" rgba="1 1 1 1"/>
-			<geom name="cup_v2061_geom" type="mesh" mesh="cup_v2061" rgba="1 1 1 1"/>
-			<geom name="cup_v2062_geom" type="mesh" mesh="cup_v2062" rgba="1 1 1 1"/>
-			<geom name="cup_v2063_geom" type="mesh" mesh="cup_v2063" rgba="1 1 1 1"/>
-		</body>
-	</worldbody>
-	-->
-
-    <!--
-    <worldbody>
-        <composite type="particle" count="2 2 2" spacing="0.04" offset="2 0 2" prefix="first">
-            <geom size=".03" rgba=".8 .2 .1 1"/>
-        </composite>
-        <composite type="particle" count="2 2 2" spacing="0.04" offset="2 0 2.1" prefix="second">
-            <geom size=".03" rgba=".8 .2 .1 1"/>
-        </composite>
-        <composite type="particle" count="2 2 2" spacing="0.04" offset="2 0 2.2" prefix="third">
-            <geom size=".03" rgba=".8 .2 .1 1"/>
-        </composite>
-        <composite type="particle" count="2 2 2" spacing="0.04" offset="2 0 2.3" prefix="fourth">
-            <geom size=".03" rgba=".8 .2 .1 1"/>
-        </composite>
-		</worldbody>
-		-->
 	
 	<worldbody>
 		<body name="sync_ball0" pos="0.59 0.075 0.8">
