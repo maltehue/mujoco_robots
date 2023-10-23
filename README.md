@@ -8,6 +8,9 @@ To start a world with the robot holding a cup containing 200 particles, and a bo
 ```bash
 roslaunch hsr_mujoco hsrb4s_velocity_particle_cup.launch
 ```
+In the world .xml file of this launch file are options to make the particles appear more viscous and to make them more bouncy when hitting the container box.
+![image](https://github.com/maltehue/mujoco_robots/assets/122607802/d2f45669-b181-4e5b-a71c-507a02e25a2f)
+
 
 To start a world with the robot holding a cup containing 200 particles, and a bowl and an empty cup on a table to pour into
 
