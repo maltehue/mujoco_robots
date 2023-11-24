@@ -1,5 +1,5 @@
 <mujoco>
-  <compiler meshdir="objects"/>
+  <compiler/>
     <option timestep="0.001" integrator="RK4" solver="CG" gravity="0 0 -9.81">
     <flag sensornoise="disable" />
   </option>

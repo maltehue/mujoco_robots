@@ -1,20 +1,18 @@
 <mujoco>
-  <compiler meshdir="objects"/>
+  <compiler/>
     <option timestep="0.001" integrator="RK4" solver="CG" gravity="0 0 -9.81" >
     <flag sensornoise="disable" contact="enable"/>
   </option>
 
 <!--Activating the following deafaults increases friction of the balls, to make them appear more viscous-->
-<!--
+
 	<default>
         <geom condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="3 0.005 0.0001"/>
-    </default> -->
+    </default> 
 
   <asset>
     <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1=".1 .2 .3" rgb2=".2 .3 .4" />
     <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2" />
-		<mesh name="bowl_side" file="bowl/stl/bowl_side.stl" scale="0.1 0.1 0.1"/>
-    <mesh name="bowl_bottom" file="bowl/stl/bowl_bottom.stl" scale="0.1 0.1 0.1"/>
   </asset>
 
   <worldbody>
@@ -25,7 +23,7 @@
 
     <worldbody>
       
-        <body name="sync_bowl" pos="2 0 0.4" >
+        <body name="sync_bowl" pos="2 0 0.4">
             
             <geom name="bottom" type="box" size="0.1 0.1 0.05" pos="0 0 -0.04" rgba=".5 .5 .5 1"/>
             
@@ -841,6 +839,7 @@
 
 
 <!--Activating the following contact pairs makes the balls bounce from the bottom of the container-->
+<!--
 <contact> 
  <pair geom1="ball0" geom2="bottom" solref="0.01 0.4"/> 
 </contact> 
@@ -1441,6 +1440,6 @@
 <contact> 
  <pair geom1="ball199" geom2="bottom" solref="0.01 0.4"/> 
 </contact> 
-
+-->
 		
 </mujoco>
