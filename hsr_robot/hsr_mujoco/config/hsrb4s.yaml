@@ -11,6 +11,7 @@ add_odom_joints: true
 
 pub_tf:
   world_bodies_rate: 60.0
+  free_bodies_only: False
 
 pub_object_state_array:
   free_bodies_only: False
