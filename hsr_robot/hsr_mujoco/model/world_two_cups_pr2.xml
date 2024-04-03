@@ -57,58 +57,7 @@
 	</worldbody>
 
 	<worldbody>
-		<body name="sync_ball0" pos="2 -0.2 0.8">
-			<freejoint/><inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball1" pos="2 -0.2 0.81">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball2" pos="2 -0.2 0.8200000000000001">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball3" pos="2 -0.2 0.8300000000000001">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball4" pos="2 -0.2 0.8400000000000001">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball5" pos="2 -0.2 0.8500000000000001">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball6" pos="2 -0.2 0.8600000000000001">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball7" pos="2 -0.2 0.8700000000000001">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball8" pos="2 -0.2 0.88">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball9" pos="2 -0.2 0.89">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball10" pos="2 -0.2 0.9">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball11" pos="2 -0.2 0.91">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
-		<body name="sync_ball12" pos="2 -0.2 0.92">
-			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
-			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
-		</body>
+		
 		<body name="sync_ball13" pos="2 -0.2 0.93">
 			<freejoint/> <inertial pos="0.0 0.0 0.0" mass="0.0001" diaginertia="0.000000001 0.000000001 0.000000001" />
 			<geom type="sphere" size="0.005" rgba="1 0 0 1"/>
