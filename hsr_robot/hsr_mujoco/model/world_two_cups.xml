@@ -44,15 +44,15 @@
 		<body name="free_cup" pos="2 -0.2 0.5">
 		<freejoint/>
      <inertial pos="0.0 0.0 0.0" mass="0.01" diaginertia="0.0008 0.0008 0.00015" />
-			<geom type="box" pos="0 0 -0.076" size="0.03 0.03 0.03" rgba="0 1 0 1"/>
-			<geom type="box" pos="0.03 0 0" euler="0 0 0" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="0.021213 0.021213 0" euler="0 0 0.7853981633974483" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="0 0.03 0" euler="0 0 1.5707963267948966" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="-0.021213 0.021213 0" euler="0 0 2.356194490192345" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="-0.03 0 0" euler="0 0 3.141592653589793" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="-0.021213 -0.021213 0" euler="0 0 -2.356194490192345" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="0 -0.03 0" euler="0 0 -1.5707963267948966" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
-			<geom type="box" pos="0.021213 -0.021213 0" euler="0 0 -0.7853981633974483" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside1" type="box" pos="0 0 -0.076" size="0.03 0.03 0.03" rgba="0 1 0 1"/>
+			<geom name="cupside2" type="box" pos="0.03 0 0" euler="0 0 0" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside3" type="box" pos="0.021213 0.021213 0" euler="0 0 0.7853981633974483" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside4" type="box" pos="0 0.03 0" euler="0 0 1.5707963267948966" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside5" type="box" pos="-0.021213 0.021213 0" euler="0 0 2.356194490192345" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside6" type="box" pos="-0.03 0 0" euler="0 0 3.141592653589793" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside7" type="box" pos="-0.021213 -0.021213 0" euler="0 0 -2.356194490192345" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside8" type="box" pos="0 -0.03 0" euler="0 0 -1.5707963267948966" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
+			<geom name="cupside9" type="box" pos="0.021213 -0.021213 0" euler="0 0 -0.7853981633974483" size="0.0044 0.013420519420888278 0.08" rgba="0 1 0 1" />
 		</body>
 	</worldbody>
 
@@ -620,5 +620,101 @@
 		
 		
 	</worldbody>
+<!-- <contact> 
+ <pair geom1="cupside2" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside2" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside2" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside2" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside3" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside3" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside3" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside3" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside4" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside4" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside4" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside4" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside5" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside5" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside5" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside5" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside6" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside6" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside6" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside6" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside7" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside7" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside7" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside7" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside8" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside8" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside8" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside8" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside9" geom2="r_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside9" geom2="r_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside9" geom2="l_distal1" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact> 
+<contact> 
+ <pair geom1="cupside9" geom2="l_distal2" condim="4" solimp="0.99 0.99 0" solref="0.01 1" friction="1 0.005 0.0001"/> 
+</contact>  -->
 
 </mujoco>
